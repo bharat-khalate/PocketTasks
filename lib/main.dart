@@ -29,13 +29,13 @@ class _PocketTasksAppState extends State<PocketTasksApp> {
   Widget build(BuildContext context) {
     final dark = ThemeData(
       colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.dark),
-      scaffoldBackgroundColor: ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.light).surface,
+      scaffoldBackgroundColor: ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.dark).surface,
       useMaterial3: true,
     );
  
     final light = ThemeData(
-      colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.light),
-      scaffoldBackgroundColor: ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.light).surface,
+      colorScheme:  ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.dark),
+      scaffoldBackgroundColor: ColorScheme.fromSeed(seedColor: const Color(0xFF290559), brightness: Brightness.dark).surface,
       useMaterial3: true,
     );
 
