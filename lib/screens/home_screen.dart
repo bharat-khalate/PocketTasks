@@ -244,7 +244,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 : null,
                           ),
                         ),
-                        onLongPress: () async {
+                        onTap: () async {
                           await store.toggleTask(task.id);
                           if (!mounted) return;
                           final nowDone = store.tasks
